@@ -1,0 +1,170 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header
+{
+    border: 1px solid black;
+    background-color: darkcyan;
+    border-radius: 3px;
+
+    width: 97%;
+    margin: 3px auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+header h1
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+}
+
+header h1 span
+{
+    display: block;
+    text-align: center;
+    padding: 3px;
+
+    font-family: Georgia, serif;
+}
+
+header span:first-child
+{
+    background-color: darkcyan;
+    color: aquamarine;
+    text-shadow: black 3px 3px;
+
+    font-size: 20px;
+    
+    flex: 10%;
+}
+
+header span:nth-child(even)
+{
+    background-color: aquamarine;
+
+    text-shadow: rgba(0, 139, 139, 0.418) 3px 3px;
+
+    float: left;
+    font-size: 15px;
+    /*font-weight: normal;*/
+
+    flex: 80%;
+    
+    padding-top: 5px;
+}
+
+section
+{
+    min-height: 300px;
+    /*background-color: yellow;*/
+
+    width: 97%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+section article.opcionRevista
+{
+    border: 1px solid black;
+    border-radius: 3px;
+
+    width: 220px;
+    height: 300px;
+
+    
+}
+
+section article.opcionRevista
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+section article.opcionRevista div.titulo
+{
+    background-color: black;
+    font-weight: bolder;
+    color: white;
+
+    padding: 3px;
+
+    text-align: center;
+}
+
+section article.opcionRevista div.imagen
+{   
+    width: 100%;
+    height: 80%;
+
+    /*background-image: url('./img/Portada.png');*/
+    background-size: cover;
+}
+
+section article.opcionRevista div.botonAcceso
+{
+    background-color: coral;
+    text-align: center;
+    padding: 3px;
+}
+
+section article.opcionRevista div.botonAcceso a,
+section article.opcionRevista div.botonComentario a
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+section article.opcionRevista div.botonAcceso a:active,
+section article.opcionRevista div.botonComentario a:active,
+section article.opcionRevista div.botonAcceso a:hover,
+section article.opcionRevista div.botonComentario a:hover
+{
+     background-color: red;
+     font-style: italic;
+}
+
+section article.opcionRevista div.botonComentario
+{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 3px;
+}
+
+footer
+{
+    border: 1px solid grey;
+    color: grey;
+    border-radius: 3px;
+
+    width: 50%;
+    margin: 0 auto;
+
+    padding: 7px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
